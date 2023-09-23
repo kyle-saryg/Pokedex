@@ -11,6 +11,12 @@
 		B106A2A22ABD093B00246DCE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B106A2A12ABD093B00246DCE /* ContentView.swift */; };
 		B106A2A42ABD093C00246DCE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B106A2A32ABD093C00246DCE /* Assets.xcassets */; };
 		B106A2A72ABD093C00246DCE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B106A2A62ABD093C00246DCE /* Preview Assets.xcassets */; };
+		B17E98522ABD100800953856 /* DataServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17E98512ABD100800953856 /* DataServiceProtocol.swift */; };
+		B17E98542ABD108200953856 /* PokemonResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17E98532ABD108200953856 /* PokemonResponse.swift */; };
+		B17E98562ABEE4C700953856 /* ContentView-ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17E98552ABEE4C700953856 /* ContentView-ViewModel.swift */; };
+		B1F13AE22ABEF0FA00521B83 /* String-CapitalizeFirstLetter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F13AE12ABEF0FA00521B83 /* String-CapitalizeFirstLetter.swift */; };
+		B1F13AE42ABEF18100521B83 /* NetworkDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F13AE32ABEF18100521B83 /* NetworkDataService.swift */; };
+		B1F13AE62ABEF1B700521B83 /* MockDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F13AE52ABEF1B700521B83 /* MockDataService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +25,12 @@
 		B106A2A12ABD093B00246DCE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B106A2A32ABD093C00246DCE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B106A2A62ABD093C00246DCE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B17E98512ABD100800953856 /* DataServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataServiceProtocol.swift; sourceTree = "<group>"; };
+		B17E98532ABD108200953856 /* PokemonResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonResponse.swift; sourceTree = "<group>"; };
+		B17E98552ABEE4C700953856 /* ContentView-ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ContentView-ViewModel.swift"; sourceTree = "<group>"; };
+		B1F13AE12ABEF0FA00521B83 /* String-CapitalizeFirstLetter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String-CapitalizeFirstLetter.swift"; sourceTree = "<group>"; };
+		B1F13AE32ABEF18100521B83 /* NetworkDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDataService.swift; sourceTree = "<group>"; };
+		B1F13AE52ABEF1B700521B83 /* MockDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockDataService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +63,12 @@
 		B106A29E2ABD093B00246DCE /* Pokedex */ = {
 			isa = PBXGroup;
 			children = (
+				B1F13AE02ABEF0E700521B83 /* Extensions */,
+				B106A2B02ABD09B700246DCE /* Services */,
+				B106A2AF2ABD09A000246DCE /* ViewModel */,
+				B106A2AE2ABD099600246DCE /* DataModels */,
+				B106A2AD2ABD098900246DCE /* Views */,
 				B106A29F2ABD093B00246DCE /* PokedexApp.swift */,
-				B106A2A12ABD093B00246DCE /* ContentView.swift */,
 				B106A2A32ABD093C00246DCE /* Assets.xcassets */,
 				B106A2A52ABD093C00246DCE /* Preview Content */,
 			);
@@ -65,6 +81,48 @@
 				B106A2A62ABD093C00246DCE /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B106A2AD2ABD098900246DCE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B106A2A12ABD093B00246DCE /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B106A2AE2ABD099600246DCE /* DataModels */ = {
+			isa = PBXGroup;
+			children = (
+				B17E98532ABD108200953856 /* PokemonResponse.swift */,
+			);
+			path = DataModels;
+			sourceTree = "<group>";
+		};
+		B106A2AF2ABD09A000246DCE /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B17E98552ABEE4C700953856 /* ContentView-ViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B106A2B02ABD09B700246DCE /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				B17E98512ABD100800953856 /* DataServiceProtocol.swift */,
+				B1F13AE32ABEF18100521B83 /* NetworkDataService.swift */,
+				B1F13AE52ABEF1B700521B83 /* MockDataService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		B1F13AE02ABEF0E700521B83 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B1F13AE12ABEF0FA00521B83 /* String-CapitalizeFirstLetter.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +195,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B17E98542ABD108200953856 /* PokemonResponse.swift in Sources */,
+				B1F13AE22ABEF0FA00521B83 /* String-CapitalizeFirstLetter.swift in Sources */,
 				B106A2A22ABD093B00246DCE /* ContentView.swift in Sources */,
+				B1F13AE42ABEF18100521B83 /* NetworkDataService.swift in Sources */,
+				B17E98562ABEE4C700953856 /* ContentView-ViewModel.swift in Sources */,
+				B1F13AE62ABEF1B700521B83 /* MockDataService.swift in Sources */,
+				B17E98522ABD100800953856 /* DataServiceProtocol.swift in Sources */,
 				B106A2A02ABD093B00246DCE /* PokedexApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

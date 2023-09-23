@@ -12,7 +12,12 @@ struct ContentView: View {
     
     var body: some View {
         List(viewModel.pokemonCatalog) { pokemon in
-            Text(pokemon.name)
+            HStack {
+                Text(pokemon.name)
+                Spacer()
+                AsyncImage(url: URL(string: pokemon.sprites.front_default))
+                AsyncImage(url: URL(string: pokemon.sprites.back_default))
+            }
         }
         .task {
             await viewModel.addToCatalog()

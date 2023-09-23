@@ -13,7 +13,7 @@ class ViewModel: ObservableObject {
     
     private var dataService: any DataService
      
-    init(dataService: any DataService = MockDataService()) {
+    init(dataService: any DataService = NetworkDataService()) {
         self.dataService = dataService
     }
     

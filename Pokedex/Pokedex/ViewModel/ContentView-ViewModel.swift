@@ -13,16 +13,18 @@ class ViewModel: ObservableObject {
     
     private var dataService: any DataService
      
-    init(dataService: any DataService = NetworkDataService()) {
+    init(dataService: any DataService = MockDataService()) {
         self.dataService = dataService
     }
     
     func addToCatalog() async {
-        do {
-            let pokemon = try await dataService.getPokemon(id: 1)
-            pokemonCatalog.append(pokemon)
-        } catch {
-            print(error.localizedDescription)
+        for i in 1..<10 {
+            do {
+                let pokemon = try await dataService.getPokemon(id: i)
+                pokemonCatalog.append(pokemon)
+            } catch {
+                print(error.localizedDescription)
+            }
         }
     }
 }

@@ -11,12 +11,22 @@
 		B106A2A22ABD093B00246DCE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B106A2A12ABD093B00246DCE /* ContentView.swift */; };
 		B106A2A42ABD093C00246DCE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B106A2A32ABD093C00246DCE /* Assets.xcassets */; };
 		B106A2A72ABD093C00246DCE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B106A2A62ABD093C00246DCE /* Preview Assets.xcassets */; };
+		B12242D92ABEF37F00A583C2 /* Bundle-Decode.swift in Sources */ = {isa = PBXBuildFile; fileRef = B12242D82ABEF37F00A583C2 /* Bundle-Decode.swift */; };
+		B12242DB2ABEFB0000A583C2 /* 7.json in Resources */ = {isa = PBXBuildFile; fileRef = B12242DA2ABEFB0000A583C2 /* 7.json */; };
 		B17E98522ABD100800953856 /* DataServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17E98512ABD100800953856 /* DataServiceProtocol.swift */; };
 		B17E98542ABD108200953856 /* PokemonResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17E98532ABD108200953856 /* PokemonResponse.swift */; };
 		B17E98562ABEE4C700953856 /* ContentView-ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17E98552ABEE4C700953856 /* ContentView-ViewModel.swift */; };
 		B1F13AE22ABEF0FA00521B83 /* String-CapitalizeFirstLetter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F13AE12ABEF0FA00521B83 /* String-CapitalizeFirstLetter.swift */; };
 		B1F13AE42ABEF18100521B83 /* NetworkDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F13AE32ABEF18100521B83 /* NetworkDataService.swift */; };
 		B1F13AE62ABEF1B700521B83 /* MockDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F13AE52ABEF1B700521B83 /* MockDataService.swift */; };
+		B1F13AF02ABEF31A00521B83 /* 6.json in Resources */ = {isa = PBXBuildFile; fileRef = B1F13AE82ABEF31A00521B83 /* 6.json */; };
+		B1F13AF12ABEF31A00521B83 /* 2.json in Resources */ = {isa = PBXBuildFile; fileRef = B1F13AE92ABEF31A00521B83 /* 2.json */; };
+		B1F13AF22ABEF31A00521B83 /* 4.json in Resources */ = {isa = PBXBuildFile; fileRef = B1F13AEA2ABEF31A00521B83 /* 4.json */; };
+		B1F13AF32ABEF31A00521B83 /* 9.json in Resources */ = {isa = PBXBuildFile; fileRef = B1F13AEB2ABEF31A00521B83 /* 9.json */; };
+		B1F13AF42ABEF31A00521B83 /* 5.json in Resources */ = {isa = PBXBuildFile; fileRef = B1F13AEC2ABEF31A00521B83 /* 5.json */; };
+		B1F13AF52ABEF31A00521B83 /* 1.json in Resources */ = {isa = PBXBuildFile; fileRef = B1F13AED2ABEF31A00521B83 /* 1.json */; };
+		B1F13AF62ABEF31A00521B83 /* 3.json in Resources */ = {isa = PBXBuildFile; fileRef = B1F13AEE2ABEF31A00521B83 /* 3.json */; };
+		B1F13AF72ABEF31A00521B83 /* 8.json in Resources */ = {isa = PBXBuildFile; fileRef = B1F13AEF2ABEF31A00521B83 /* 8.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,12 +35,22 @@
 		B106A2A12ABD093B00246DCE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B106A2A32ABD093C00246DCE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B106A2A62ABD093C00246DCE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B12242D82ABEF37F00A583C2 /* Bundle-Decode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle-Decode.swift"; sourceTree = "<group>"; };
+		B12242DA2ABEFB0000A583C2 /* 7.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 7.json; sourceTree = "<group>"; };
 		B17E98512ABD100800953856 /* DataServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataServiceProtocol.swift; sourceTree = "<group>"; };
 		B17E98532ABD108200953856 /* PokemonResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonResponse.swift; sourceTree = "<group>"; };
 		B17E98552ABEE4C700953856 /* ContentView-ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ContentView-ViewModel.swift"; sourceTree = "<group>"; };
 		B1F13AE12ABEF0FA00521B83 /* String-CapitalizeFirstLetter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String-CapitalizeFirstLetter.swift"; sourceTree = "<group>"; };
 		B1F13AE32ABEF18100521B83 /* NetworkDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDataService.swift; sourceTree = "<group>"; };
 		B1F13AE52ABEF1B700521B83 /* MockDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockDataService.swift; sourceTree = "<group>"; };
+		B1F13AE82ABEF31A00521B83 /* 6.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 6.json; sourceTree = "<group>"; };
+		B1F13AE92ABEF31A00521B83 /* 2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 2.json; sourceTree = "<group>"; };
+		B1F13AEA2ABEF31A00521B83 /* 4.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 4.json; sourceTree = "<group>"; };
+		B1F13AEB2ABEF31A00521B83 /* 9.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 9.json; sourceTree = "<group>"; };
+		B1F13AEC2ABEF31A00521B83 /* 5.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 5.json; sourceTree = "<group>"; };
+		B1F13AED2ABEF31A00521B83 /* 1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 1.json; sourceTree = "<group>"; };
+		B1F13AEE2ABEF31A00521B83 /* 3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 3.json; sourceTree = "<group>"; };
+		B1F13AEF2ABEF31A00521B83 /* 8.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 8.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +83,7 @@
 		B106A29E2ABD093B00246DCE /* Pokedex */ = {
 			isa = PBXGroup;
 			children = (
+				B1F13AE72ABEF30000521B83 /* MockData */,
 				B1F13AE02ABEF0E700521B83 /* Extensions */,
 				B106A2B02ABD09B700246DCE /* Services */,
 				B106A2AF2ABD09A000246DCE /* ViewModel */,
@@ -121,8 +142,25 @@
 			isa = PBXGroup;
 			children = (
 				B1F13AE12ABEF0FA00521B83 /* String-CapitalizeFirstLetter.swift */,
+				B12242D82ABEF37F00A583C2 /* Bundle-Decode.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B1F13AE72ABEF30000521B83 /* MockData */ = {
+			isa = PBXGroup;
+			children = (
+				B1F13AED2ABEF31A00521B83 /* 1.json */,
+				B1F13AE92ABEF31A00521B83 /* 2.json */,
+				B1F13AEE2ABEF31A00521B83 /* 3.json */,
+				B1F13AEA2ABEF31A00521B83 /* 4.json */,
+				B1F13AEC2ABEF31A00521B83 /* 5.json */,
+				B1F13AE82ABEF31A00521B83 /* 6.json */,
+				B12242DA2ABEFB0000A583C2 /* 7.json */,
+				B1F13AEF2ABEF31A00521B83 /* 8.json */,
+				B1F13AEB2ABEF31A00521B83 /* 9.json */,
+			);
+			path = MockData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -183,8 +221,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1F13AF72ABEF31A00521B83 /* 8.json in Resources */,
+				B1F13AF22ABEF31A00521B83 /* 4.json in Resources */,
+				B1F13AF42ABEF31A00521B83 /* 5.json in Resources */,
+				B1F13AF12ABEF31A00521B83 /* 2.json in Resources */,
+				B1F13AF02ABEF31A00521B83 /* 6.json in Resources */,
+				B1F13AF32ABEF31A00521B83 /* 9.json in Resources */,
 				B106A2A72ABD093C00246DCE /* Preview Assets.xcassets in Resources */,
+				B1F13AF62ABEF31A00521B83 /* 3.json in Resources */,
 				B106A2A42ABD093C00246DCE /* Assets.xcassets in Resources */,
+				B12242DB2ABEFB0000A583C2 /* 7.json in Resources */,
+				B1F13AF52ABEF31A00521B83 /* 1.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,6 +244,7 @@
 			files = (
 				B17E98542ABD108200953856 /* PokemonResponse.swift in Sources */,
 				B1F13AE22ABEF0FA00521B83 /* String-CapitalizeFirstLetter.swift in Sources */,
+				B12242D92ABEF37F00A583C2 /* Bundle-Decode.swift in Sources */,
 				B106A2A22ABD093B00246DCE /* ContentView.swift in Sources */,
 				B1F13AE42ABEF18100521B83 /* NetworkDataService.swift in Sources */,
 				B17E98562ABEE4C700953856 /* ContentView-ViewModel.swift in Sources */,

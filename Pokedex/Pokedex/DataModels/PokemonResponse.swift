@@ -41,11 +41,6 @@ struct PokeAPIResponse: Codable, Identifiable {
         let url: String
     }
     
-    struct Sprite: Codable {
-        let back_default: String
-        let front_default: String
-    }
-    
     struct `Type`: Codable {
         let type: TypeDetail
         

@@ -11,12 +11,12 @@ struct ContentView: View {
     @ObservedObject var viewModel: ViewModel
     
     var body: some View {
-        List(viewModel.pokemonCatalog) { pokemon in
-            HStack {
-                Text(pokemon.name)
-                Spacer()
-                AsyncImage(url: URL(string: pokemon.sprites.front_default))
-                AsyncImage(url: URL(string: pokemon.sprites.back_default))
+        ScrollView {
+            VStack {
+                ForEach(viewModel.pokemonCatalog) { pokemon in
+                    PokemonItemView(pokemon: pokemon, color: ViewModel.getItemColor(pokemon: pokemon))
+                }
+                .padding(EdgeInsets(top: 0, leading: 10, bottom: 0, trailing: 10))
             }
         }
         .task {

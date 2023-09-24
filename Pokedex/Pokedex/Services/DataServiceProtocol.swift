@@ -8,7 +8,7 @@
 import Foundation
 
 protocol DataService {
-    func getPokemon(id: Int) async throws -> PokeAPIResponse
+    func getPokemon(id: Int) async throws -> Pokemon
 }
 
 enum PokemonDataError: Error {
@@ -17,5 +17,4 @@ enum PokemonDataError: Error {
 
 enum NetworkError: Error {
     case InvalidURL
-    
 }

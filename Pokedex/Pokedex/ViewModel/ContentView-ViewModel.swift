@@ -6,10 +6,11 @@
 //
 
 import Foundation
+import SwiftUI
 
 @MainActor
 class ViewModel: ObservableObject {
-    @Published var pokemonCatalog: [PokeAPIResponse] = []
+    @Published var pokemonCatalog: [Pokemon] = []
     
     private var dataService: any DataService
      
@@ -25,6 +26,21 @@ class ViewModel: ObservableObject {
             } catch {
                 print(error.localizedDescription)
             }
+        }
+    }
+    
+    static func getItemColor(pokemon: Pokemon) -> Color {
+        switch pokemon.types.first {
+        case "water":
+            return Color.teal
+        case "fire":
+            return Color.orange
+        case "grass":
+            return Color.green
+        case "normal":
+            return Color.gray
+        default:
+                return Color.gray
         }
     }
 }

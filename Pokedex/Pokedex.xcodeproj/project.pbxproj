@@ -16,6 +16,10 @@
 		B17E98522ABD100800953856 /* DataServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17E98512ABD100800953856 /* DataServiceProtocol.swift */; };
 		B17E98542ABD108200953856 /* PokemonResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17E98532ABD108200953856 /* PokemonResponse.swift */; };
 		B17E98562ABEE4C700953856 /* ContentView-ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17E98552ABEE4C700953856 /* ContentView-ViewModel.swift */; };
+		B1AB8D752AC1337B00804BDC /* PressStart2P.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B1AB8D742AC1337B00804BDC /* PressStart2P.ttf */; };
+		B1AB8D782AC1386700804BDC /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1AB8D772AC1386700804BDC /* DetailView.swift */; };
+		B1AB8D7B2AC144CC00804BDC /* Pokemon Solid.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B1AB8D792AC144CC00804BDC /* Pokemon Solid.ttf */; };
+		B1AB8D7C2AC144CC00804BDC /* Pokemon Hollow.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B1AB8D7A2AC144CC00804BDC /* Pokemon Hollow.ttf */; };
 		B1B8939E2ABF97D0002E99DC /* PokemonItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B8939D2ABF97D0002E99DC /* PokemonItemView.swift */; };
 		B1B893A22ABFBEC2002E99DC /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B893A12ABFBEC2002E99DC /* Pokemon.swift */; };
 		B1B893A42ABFC6B5002E99DC /* Sprite.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B893A32ABFC6B5002E99DC /* Sprite.swift */; };
@@ -43,6 +47,11 @@
 		B17E98512ABD100800953856 /* DataServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataServiceProtocol.swift; sourceTree = "<group>"; };
 		B17E98532ABD108200953856 /* PokemonResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonResponse.swift; sourceTree = "<group>"; };
 		B17E98552ABEE4C700953856 /* ContentView-ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ContentView-ViewModel.swift"; sourceTree = "<group>"; };
+		B1AB8D742AC1337B00804BDC /* PressStart2P.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = PressStart2P.ttf; sourceTree = "<group>"; };
+		B1AB8D762AC133F400804BDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		B1AB8D772AC1386700804BDC /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		B1AB8D792AC144CC00804BDC /* Pokemon Solid.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pokemon Solid.ttf"; sourceTree = "<group>"; };
+		B1AB8D7A2AC144CC00804BDC /* Pokemon Hollow.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pokemon Hollow.ttf"; sourceTree = "<group>"; };
 		B1B8939D2ABF97D0002E99DC /* PokemonItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonItemView.swift; sourceTree = "<group>"; };
 		B1B893A12ABFBEC2002E99DC /* Pokemon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pokemon.swift; sourceTree = "<group>"; };
 		B1B893A32ABFC6B5002E99DC /* Sprite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sprite.swift; sourceTree = "<group>"; };
@@ -89,6 +98,8 @@
 		B106A29E2ABD093B00246DCE /* Pokedex */ = {
 			isa = PBXGroup;
 			children = (
+				B1AB8D762AC133F400804BDC /* Info.plist */,
+				B1AB8D732AC1335300804BDC /* Font */,
 				B106A2AE2ABD099600246DCE /* DataModels */,
 				B1F13AE02ABEF0E700521B83 /* Extensions */,
 				B1F13AE72ABEF30000521B83 /* MockData */,
@@ -115,6 +126,7 @@
 			children = (
 				B106A2A12ABD093B00246DCE /* ContentView.swift */,
 				B1B8939D2ABF97D0002E99DC /* PokemonItemView.swift */,
+				B1AB8D772AC1386700804BDC /* DetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -145,6 +157,16 @@
 				B1F13AE52ABEF1B700521B83 /* MockDataService.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		B1AB8D732AC1335300804BDC /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				B1AB8D7A2AC144CC00804BDC /* Pokemon Hollow.ttf */,
+				B1AB8D792AC144CC00804BDC /* Pokemon Solid.ttf */,
+				B1AB8D742AC1337B00804BDC /* PressStart2P.ttf */,
+			);
+			path = Font;
 			sourceTree = "<group>";
 		};
 		B1F13AE02ABEF0E700521B83 /* Extensions */ = {
@@ -236,9 +258,12 @@
 				B1F13AF12ABEF31A00521B83 /* 2.json in Resources */,
 				B1F13AF02ABEF31A00521B83 /* 6.json in Resources */,
 				B1F13AF32ABEF31A00521B83 /* 9.json in Resources */,
+				B1AB8D7C2AC144CC00804BDC /* Pokemon Hollow.ttf in Resources */,
 				B106A2A72ABD093C00246DCE /* Preview Assets.xcassets in Resources */,
 				B1F13AF62ABEF31A00521B83 /* 3.json in Resources */,
+				B1AB8D7B2AC144CC00804BDC /* Pokemon Solid.ttf in Resources */,
 				B106A2A42ABD093C00246DCE /* Assets.xcassets in Resources */,
+				B1AB8D752AC1337B00804BDC /* PressStart2P.ttf in Resources */,
 				B12242DB2ABEFB0000A583C2 /* 7.json in Resources */,
 				B1F13AF52ABEF31A00521B83 /* 1.json in Resources */,
 			);
@@ -258,6 +283,7 @@
 				B106A2A22ABD093B00246DCE /* ContentView.swift in Sources */,
 				B1F13AE42ABEF18100521B83 /* NetworkDataService.swift in Sources */,
 				B1B893A22ABFBEC2002E99DC /* Pokemon.swift in Sources */,
+				B1AB8D782AC1386700804BDC /* DetailView.swift in Sources */,
 				B17E98562ABEE4C700953856 /* ContentView-ViewModel.swift in Sources */,
 				B1F13AE62ABEF1B700521B83 /* MockDataService.swift in Sources */,
 				B17E98522ABD100800953856 /* DataServiceProtocol.swift in Sources */,
@@ -399,6 +425,7 @@
 				DEVELOPMENT_TEAM = 394WW94RHF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Pokedex/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -428,6 +455,7 @@
 				DEVELOPMENT_TEAM = 394WW94RHF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Pokedex/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

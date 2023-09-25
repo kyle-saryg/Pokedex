@@ -12,21 +12,20 @@ struct PokemonItemView: View {
     @State var color: Color
     
     var body: some View {
-        ZStack {
-            RoundedRectangle(cornerRadius: 10)
-                .fill(color)
-                .frame(height: 100)
-                .overlay {
-                    HStack {
-                        AsyncImage(url: URL(string: pokemon.sprites.front_default))
-                        Spacer()
-                        Text(pokemon.name)
-                            .font(.title3)
-                            .padding()
-                    }
-                    
+        RoundedRectangle(cornerRadius: 10)
+            .fill(color)
+            .frame(height: 100)
+            .overlay {
+                HStack {
+                    Text("\(pokemon.id). \(pokemon.name)")
+                        .font(.custom("PressStart2P", size: 13))
+                        .padding()
+                    Spacer()
+                    AsyncImage(url: URL(string: pokemon.sprites.front_default))
                 }
-        }
+                
+            }
+            .padding(.horizontal)
     }
 }
 

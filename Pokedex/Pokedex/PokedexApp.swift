@@ -9,7 +9,7 @@ import SwiftUI
 
 @main
 struct PokedexApp: App {
-    @StateObject var viewModel = ViewModel(dataService: MockDataService())
+    @StateObject var viewModel = ViewModel(dataService: NetworkDataService())
     
     var body: some Scene {
         WindowGroup {

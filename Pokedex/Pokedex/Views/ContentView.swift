@@ -30,15 +30,6 @@ struct ContentView: View {
                 }
             }
             .navigationTitle("Pokemon")
-            
-//            .toolbar(content: {
-//                ToolbarItem(placement: .topBarLeading) {
-//                    Text("Pokedex")
-//                        .navigationBarTitleDisplayMode(.large)
-//                        .font(.custom("PokemonSolidNormal", size: 30))
-//                }
-//            })
-            .border(Color.red, width: 3)
         }
         .task {
             await viewModel.addToCatalog(151)

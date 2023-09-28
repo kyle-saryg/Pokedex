@@ -9,11 +9,11 @@ import Foundation
 
 struct Pokemon: Codable, Identifiable {
     let id: Int
-    let name: String
     let abilities: [String]
     let baseExperience: Int
     let heigh: Int
     let moves: [String]
+    let name: String
     let species: String
     let sprites: Sprite
     let types: [String]

@@ -38,5 +38,5 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView(viewModel: ViewModel())
+    ContentView(viewModel: ViewModel(dataService: MockDataService()))
 }

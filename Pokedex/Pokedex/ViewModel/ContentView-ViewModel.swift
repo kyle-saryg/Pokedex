@@ -10,9 +10,9 @@ import SwiftUI
 
 @MainActor
 class ViewModel: ObservableObject {
-    @Published var pokemonCatalog: [Pokemon] = []
-    
     private var dataService: any DataService
+    
+    @Published var pokemonCatalog: [Pokemon] = []
      
     init(dataService: any DataService = NetworkDataService()) {
         self.dataService = dataService

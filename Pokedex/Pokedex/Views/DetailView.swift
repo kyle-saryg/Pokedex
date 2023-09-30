@@ -17,15 +17,24 @@ struct DetailView: View {
     }
     
     var body: some View {
-        VStack {
-            Text("\(pokemon.id). \(pokemon.name)")
-                .font(.custom("PressStart2P", size: 16))
+        VStack(alignment: .leading){
             HStack {
-                AsyncImage(url: URL(string: pokemon.sprites.back_default))
+                Text("\(pokemon.id). \(pokemon.name)")
+                    .font(.custom("PressStart2P", size: 12))
                 AsyncImage(url: URL(string: pokemon.sprites.front_default))
             }
-            Text(viewModel.pokemonDescription)
+            HStack {
+                Text(viewModel.pokemonDescription)
+                    .font(.system(size: 12))
+                VStack {
+                    Text("\(pokemon.height)")
+                    Text("\(pokemon.baseExperience)")
+                    Text("\(pokemon.weight)")
+                }
+            }
+                
         }
+        .border(Color.red, width: 1)
         .task {
             await viewModel.getPokemonDescription()
         }

@@ -13,6 +13,7 @@ class DetailView_ViewModel: ObservableObject {
     
     @Published var pokemon: Pokemon
     @Published var pokemonDescription: String = "---"
+    @Published var evolutionImageStrings: [[String]] = [[]]
     
     init(pokemon: Pokemon, dataService: any DataService = NetworkDataService()) {
         self.pokemon = pokemon

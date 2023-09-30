@@ -26,10 +26,6 @@ struct NetworkDataService: DataService {
         }
     }
     
-//    func getEvolutionChain(from: Pokemon) async throws -> [[Pokemon]] {
-//        <#code#>
-//    }
-    
     func getPokemon(id: Int) async throws -> Pokemon {
         do {
             let response: PokeAPIResponse = try await queryAPI(url: "https://pokeapi.co/api/v2/pokemon/\(id)")
@@ -38,7 +34,7 @@ struct NetworkDataService: DataService {
             let moves: [String] = response.moves.map { $0.move.name }
             let types: [String] = response.types.map { $0.type.name }
             
-            let pokemon: Pokemon = Pokemon(id: response.id, abilities: abilities, baseExperience: response.base_experience, heigh: response.height, moves: moves , name: response.name.capitalizeFirstLetter(), species: response.species.url, sprites: response.sprites, types: types, weight: response.weight)
+            let pokemon: Pokemon = Pokemon(id: response.id, abilities: abilities, baseExperience: response.base_experience, height: response.height, moves: moves , name: response.name.capitalizeFirstLetter(), species: response.species.url, sprites: response.sprites, types: types, weight: response.weight)
             
             return pokemon
         } catch {

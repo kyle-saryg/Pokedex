@@ -7,18 +7,17 @@
 
 import Foundation
 
-struct EvolutionChain: Decodable {
-    let babyTriggerItem: String?
-    let chain: EvolutionDetails
-    let id: Int
-
-    struct EvolutionDetails: Decodable {
-        let evolvesTo: [EvolutionDetails]
-        let species: Species
-        
-        struct Species: Decodable {
-            let name: String
-            let url: String
-        }
-    }
-}
+//struct EvolutionChain: Codable {
+//    let chain: EvolutionDetails
+//    let id: Int
+//
+//    struct EvolutionDetails: Codable {
+//        let evolvesTo: EvolutionDetails
+//        let species: Species
+//        
+//        struct Species: Decodable {
+//            let name: String
+//            let url: String
+//        }
+//    }
+//}

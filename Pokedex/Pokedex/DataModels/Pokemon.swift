@@ -11,7 +11,7 @@ struct Pokemon: Codable, Identifiable {
     let id: Int
     let abilities: [String]
     let baseExperience: Int
-    let heigh: Int
+    let height: Int
     let moves: [String]
     let name: String
     let species: String

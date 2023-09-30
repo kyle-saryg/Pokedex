@@ -8,7 +8,6 @@
 import Foundation
 
 protocol DataService {
-//    func getEvolutionChain(from: Pokemon) async throws -> [[Pokemon]]
     func getPokemon(id: Int) async throws -> Pokemon
     func getSpeciesInfo(url: String) async throws -> PokemonSpeciesResponse
     func getPokemonDescription(pokemon: Pokemon) async throws -> String
